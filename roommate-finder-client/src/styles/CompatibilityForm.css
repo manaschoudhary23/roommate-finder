@@ -1,0 +1,94 @@
+.compatibility-form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.compatibility-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.compatibility-form h3 {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.compatibility-form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+.compatibility-form select,
+.compatibility-form input[type="number"],
+.compatibility-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+.compatibility-form select:focus,
+.compatibility-form input[type="number"]:focus,
+.compatibility-form textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.compatibility-form .hobby-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.hobby-options label {
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.hobby-options input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.compatibility-form button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 8px 5px 0 0;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.compatibility-form button:hover {
+  background: #45a049;
+}
+
+@media (max-width: 600px) {
+  .compatibility-form {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .hobby-options {
+    flex-direction: column;
+  }
+}

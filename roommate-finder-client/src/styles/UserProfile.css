@@ -1,0 +1,33 @@
+.user-profile {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.profile-header img {
+  border: 2px solid #ddd;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.compatibility-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.property-card img {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .compatibility-grid {
+    grid-template-columns: 1fr;
+  }
+}

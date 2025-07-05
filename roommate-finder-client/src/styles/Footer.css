@@ -1,0 +1,18 @@
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  position: relative; 
+}
+
+.page-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content-wrap {
+  flex: 1;
+}

@@ -1,0 +1,243 @@
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fefefe, #f3f5f9);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h3, h4 {
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+input.form-control, textarea.form-control {
+  padding: 14px 18px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  background: #fff;
+  transition: all 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+input.form-control:focus, textarea.form-control:focus {
+  border-color: #ff7a7a;
+  box-shadow: 0 0 10px rgba(255, 122, 122, 0.35);
+  outline: none;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 140px;
+}
+
+input.form-control::placeholder, textarea.form-control::placeholder {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+button, .btn {
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+button:hover, .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 16px rgba(0,0,0,0.15);
+}
+
+button.primary {
+  background: linear-gradient(135deg, #ff7a7a, #ff4d4d);
+  color: #fff;
+}
+
+button.primary:hover {
+  background: linear-gradient(135deg, #ff4d4d, #e62e2e);
+}
+
+button.danger {
+  background: linear-gradient(135deg, #ff944d, #ff6600);
+  color: #fff;
+}
+
+button.danger:hover {
+  background: linear-gradient(135deg, #e65c00, #cc5200);
+}
+
+.d-flex.flex-column.bg-light.p-3 {
+  background: linear-gradient(135deg, #ffe0e0, #ffe7d9);
+  border-right: 1px solid #ccc;
+  min-height: 100vh;
+  padding: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.nav .btn {
+  margin-bottom: 0.8rem;
+  background: linear-gradient(135deg, #b3e0ff, #80dfff);
+  color: #333;
+}
+
+.nav .btn:hover {
+  background: linear-gradient(135deg, #66d9ff, #33ccff);
+  color: #000;
+}
+
+.mt-auto.pt-3.text-muted {
+  font-size: 0.85rem;
+}
+
+.sidebar-profile-pic {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border: 3px solid transparent;
+  background: linear-gradient(135deg, #ffa07a, #ff7a7a) padding-box, linear-gradient(135deg, #ffb6b6, #ff7a7a) border-box;
+  padding: 4px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  margin-bottom: 15px;
+}
+
+.sidebar-profile-pic:hover {
+  transform: scale(1.12);
+  box-shadow: 0 10px 30px rgba(255, 122, 122, 0.5);
+  border-color: #ff4d4d;
+}
+
+.profile-pic-upload input[type="file"].form-control {
+  background: linear-gradient(135deg, #fff, #f7f7f7);
+  border: 2px dashed #ffb6b6;
+  color: #555;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.profile-pic-upload input[type="file"].form-control:hover {
+  border-color: #ff4d4d;
+  background: linear-gradient(135deg, #fff0f0, #ffe0e0);
+}
+
+.compatibility-section {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fff, #f7f7f7);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: 1.5rem;
+}
+
+#profile-section .compatibility-section label {
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: #333;
+}
+
+#profile-section .compatibility-section select,
+#profile-section .compatibility-section input,
+#profile-section .compatibility-section textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+#profile-section .compatibility-section .hobby-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+#profile-section .compatibility-section .hobby-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #fff, #f9f9f9);
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+#profile-section .compatibility-section .hobby-options label:hover {
+  background: linear-gradient(135deg, #ffe4e1, #ffe0f0);
+}
+
+#listings-section, #bookings-section {
+  background: linear-gradient(135deg, #fff, #f2f2f2);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+}
+
+.border.rounded.p-3.mb-3 {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.border.rounded.p-3.mb-3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+  }
+  .d-flex.flex-column.bg-light.p-3 {
+    flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+    height: auto;
+  }
+  h3, h4 {
+    font-size: 1.25rem;
+  }
+  button, .btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+  .sidebar-profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.avatar-preview img {
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  background-color: #f8f9fa;
+}
+
+.avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  background-color: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  border-radius: 50%;
+  border: 1px dashed #ccc;
+  font-size: 12px;
+}
